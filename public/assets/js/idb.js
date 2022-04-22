@@ -17,7 +17,7 @@ request.onupgradeneeded = function(event) {
 
          // check if app is online, if yes run uploadPizza() function to send all local db data to api
          if (navigator.onLine){
-             // we havent created this yet,
+             // we haven't created this yet,
              // uploadPizza();
          }
 };
@@ -27,7 +27,7 @@ request.onupgradeneeded = function(event) {
     };
 };
 
-// This function will be executed if we attempt to submit a new pizza and new pizza and there's no internet connection
+// This function will be executed if we attempt to submit new pizza and there's no internet connection
 function saveRecord(record) {
     // open a new transaction with the db with read and write permissions
     const transaction = db.transaction(['new_pizza'], 'readwrite');
